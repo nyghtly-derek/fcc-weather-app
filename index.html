@@ -6,12 +6,16 @@
         <meta charset="utf-8">
     </head>
     
-    <body onload="getLocation()">
+    <body onload="getWeather()">
         <div class="content">
             <h1>How's it look out there?</h1>
-            <p>Location: <span id="js-location">Anytown USA</span></p>
-            <p>Temperature: 70F</p>
-            <p>Temp Type: F</p>
+            <p>
+                <span id="js-location">Anytown USA</span>
+            </p>
+            <p> 
+                <span id="js-temp">100</span>
+                <span id="js-temptype">C</span>
+            </p>
             <p>Conditions: Sunny</p>
         </div>
         <script async defer 

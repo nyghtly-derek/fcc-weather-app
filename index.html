@@ -6,17 +6,20 @@
         <meta charset="utf-8">
     </head>
     
-    <body onload="getWeather()">
+    <body onload="getLocation()">
         <div class="content">
             <h1>How's it look out there?</h1>
             <p>
                 <span id="js-location">Anytown USA</span>
             </p>
-            <p> 
+            <div> 
                 <span id="js-temp">100</span>
                 <span id="js-temptype">C</span>
+                <button onclick="switchTempType()">C/F Switch</button>
+            </div>
+            <p>Conditions: 
+                <span id="js-conditions">Sunny</span>
             </p>
-            <p>Conditions: Sunny</p>
         </div>
         <script async defer 
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiV2zxu-Ed6dZJ41OEcqFbRGtdYpg4eME&callback=initMap">
